@@ -14,8 +14,14 @@ import java.util.Iterator;
 public class CommandLineView {
     private RentABike rentaBike;
 
-    public CommandLineView() {
-        this.rentaBike = new RentABike("Bruce's Bikes");
+    public CommandLineView() {}
+    
+    public void setRentaBike(RentABike rentaBike){
+        this.rentaBike = rentaBike;
+    }
+
+    public RentABike getRentaBike() {
+        return rentaBike;
     }
     
     public void printAllBikes(){
@@ -25,15 +31,5 @@ public class CommandLineView {
             Bike bike = (Bike) iter.next();
             System.out.println(bike.toString());
         }
-    }
-    
-    
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        CommandLineView clv = new CommandLineView();
-        clv.printAllBikes();
     }
 }

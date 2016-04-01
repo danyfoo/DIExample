@@ -12,6 +12,6 @@ import java.util.List;
  * @author darivera
  */
 interface RentABike {
-    List getBike();
+    List getBikes();
     Bike getBike(String serialNo);
 }

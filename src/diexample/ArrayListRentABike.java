@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @author darivera
  */
-public class ArrayListRentABike {
+public class ArrayListRentABike implements RentABike{
     private String storeName;
     final List bikes = new ArrayList();
     
